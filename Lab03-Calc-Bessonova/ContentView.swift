@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State var a: String = "0"
+	@State var b: String = "0"
+	@State var fn: String = ""
     var body: some View {
 			ZStack{
 				
@@ -19,7 +22,11 @@ struct ContentView: View {
 					
 					HStack(spacing:1){
 					
-					Button(action:{}){
+					Button(action:{
+						self.a = "0"
+						self.b = "0"
+						self.fn = ""
+					}){
 						
 						ZStack{
 							
