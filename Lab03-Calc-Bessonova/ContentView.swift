@@ -65,7 +65,16 @@ struct ContentView: View {
 				
 					HStack(spacing:1){
 					
-					Button(action:{}){
+					Button(action:{
+						if (self.fn.count == 0)
+						{
+							self.a = "7"
+						}
+						else{
+							self.b = "7"
+						}
+						
+					}){
 						
 						ZStack{
 							
