@@ -10,8 +10,178 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-    }
+			ZStack{
+				
+				Color("backgr")
+				VStack(spacing:1){
+					Spacer()
+					Text("0").font(.system(size:80)).frame(width: UIScreen.main.bounds.width, alignment: .trailing)
+					
+					HStack(spacing:1){
+					
+					Button(action:{}){
+						
+						ZStack{
+							
+							Color("btn_spec")
+							Text("AC")
+						   }
+					  }
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_spec")
+						Image(systemName: "plusminus")
+						 }
+					}
+					
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_spec")
+						Text("%")
+						 }
+					}
+					
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_act")
+						Image(systemName: "divide")
+						 }
+					}
+					
+					}.frame(height: UIScreen.main.bounds.width / 4)
+				
+					HStack(spacing:1){
+					
+					Button(action:{}){
+						
+						ZStack{
+							
+							Color("btn_dig")
+							Text("7")
+						   }
+					  }
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_dig")
+						Text("8")
+						 }
+					}
+					
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_dig")
+						Text("9")
+						 }
+					}
+					
+					Button(action:{}){
+					
+					ZStack{
+						
+						Color("btn_act")
+						Image(systemName: "multiply")
+						 }
+					}
+					
+					}.frame(height:UIScreen.main.bounds.width / 4)
+					HStack(spacing:1){
+						Button(action:{}){
+							ZStack{
+							Color("btn_dig")
+							Text("4")
+							}
+							
+						}
+						Button(action:{}){
+							ZStack{
+							Color("btn_dig")
+								Text("5")
+								
+							}
+							
+						}
+						Button(action:{}){
+							ZStack{
+								Color("btn_dig")
+								Text("6")
+							}
+						}
+						Button(action:{}){
+							ZStack{
+								Color("btn_act")
+								Text("-")
+							}
+						}
+						
+					}.frame(height:UIScreen.main.bounds.width / 4)
+					
+					HStack(spacing:1){
+						Button(action:{}){
+							ZStack{
+								Color("btn_dig")
+								Text("1")
+							}
+						}
+						Button(action:{}){
+							ZStack{
+								Color("btn_dig")
+								Text("2")
+							}
+						}
+						Button(action:{}){
+							ZStack{
+								Color("btn_dig")
+								Text("3")
+							}
+						}
+						Button(action:{}){
+							ZStack{
+								Color("btn_act")
+								Text("+")
+							}
+						}
+					}.frame(height: UIScreen.main.bounds.width / 4)
+					HStack(spacing:1){
+						Button(action:{}){
+							ZStack{
+								Color("btn_dig")
+								Text("0")
+							}
+						}.frame(width: UIScreen.main.bounds.width / 2 - 0.5)
+						
+						Button(action:{})
+						{
+							ZStack{
+								Color("btn_dig")
+								Text(".")
+							}
+						}
+						Button(action: {}){
+							ZStack{
+								Color("btn_act")
+								Text("=")
+							}
+						}
+						
+					}.frame(height: UIScreen.main.bounds.width / 4)
+					
+					
+					
+				}.foregroundColor(.white).font(.system(size:25))
+					
+				}
+				
+	}
 }
 
 struct ContentView_Previews: PreviewProvider {
