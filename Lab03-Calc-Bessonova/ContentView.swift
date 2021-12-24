@@ -34,7 +34,10 @@ struct ContentView: View {
 							Text("AC")
 						   }
 					  }
-					Button(action:{}){
+					Button(action:{
+						
+						self.fn = "+/-"
+					}){
 					
 					ZStack{
 						
@@ -43,7 +46,10 @@ struct ContentView: View {
 						 }
 					}
 					
-					Button(action:{}){
+					Button(action:{
+						
+						self.fn = "%"
+					}){
 					
 					ZStack{
 						
@@ -72,10 +78,10 @@ struct ContentView: View {
 					Button(action:{
 						if (self.fn.count == 0)
 						{
-							self.a = "7"
+							self.a += "7"
 						}
 						else{
-							self.b = "7"
+							self.b += "7"
 						}
 						
 					}){
