@@ -94,10 +94,10 @@ struct ContentView: View {
 					  }
 					Button(action:{
 						if(self.fn.count == 0){
-							self.a = "8"
+							self.a += "8"
 						}
 						else{
-							self.b = "8"
+							self.b += "8"
 						}
 						
 					}){
@@ -111,10 +111,10 @@ struct ContentView: View {
 					
 					Button(action:{
 						if(self.fn.count ==  0){
-							self.a = "9"
+							self.a += "9"
 						}
 						else{
-							self.b = "9"
+							self.b += "9"
 						}
 						
 					}){
@@ -145,10 +145,10 @@ struct ContentView: View {
 							
 							if (self.fn.count == 0)
 							{
-								self.a = "4"
+								self.a += "4"
 							}
 							else{
-								self.b = "4"
+								self.b += "4"
 							}
 							
 						}){
@@ -161,10 +161,10 @@ struct ContentView: View {
 						Button(action:{
 							if (self.fn.count == 0)
 							{
-								self.a = "5"
+								self.a += "5"
 							}
 							else{
-								self.b = "5"
+								self.b += "5"
 							}
 						}){
 							ZStack{
@@ -178,10 +178,10 @@ struct ContentView: View {
 							
 							if (self.fn.count == 0)
 							{
-								self.a = "6"
+								self.a += "6"
 							}
 							else{
-								self.b = "6"
+								self.b += "6"
 							}						}){
 							ZStack{
 								Color("btn_dig")
@@ -204,10 +204,10 @@ struct ContentView: View {
 							
 							if (self.fn.count == 0)
 							{
-								self.a = "1"
+								self.a += "1"
 							}
 							else{
-								self.b = "1"
+								self.b += "1"
 							}						}){
 							ZStack{
 								Color("btn_dig")
@@ -217,10 +217,10 @@ struct ContentView: View {
 						Button(action:{
 							if (self.fn.count == 0)
 							{
-								self.a = "2"
+								self.a += "2"
 							}
 							else{
-								self.b = "2"
+								self.b += "2"
 							}
 						}){
 							ZStack{
@@ -232,10 +232,10 @@ struct ContentView: View {
 							
 							if (self.fn.count == 0)
 							{
-								self.a = "3"
+								self.a += "3"
 							}
 							else{
-								self.b = "3"
+								self.b += "3"
 							}						}){
 							ZStack{
 								Color("btn_dig")
@@ -256,10 +256,10 @@ struct ContentView: View {
 							
 							if (self.fn.count == 0)
 							{
-								self.a = "0"
+								self.a += "0"
 							}
 							else{
-								self.b = "0"
+								self.b += "0"
 							}						}){
 							ZStack{
 								Color("btn_dig")
@@ -288,7 +288,7 @@ struct ContentView: View {
 							var y:Float = Float(self.b)!
 							if self.fn == "+"
 							{
-								self.a = String( x + y)
+								self.a = String(x + y)
 							}
 							else if self.fn == "-"{
 								self.a = String(x - y)
